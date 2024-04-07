@@ -13,6 +13,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "DropCoin",
+                    "type": "Button",
+                    "id": "20a66a7b-67ef-43cf-8ae3-7933bd96fb81",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -30,17 +39,6 @@
                 {
                     "name": "up",
                     "id": "6f8233af-4197-4f2c-9ef0-96a04e8429ab",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "d0f1b744-3697-4814-a4fe-68e348c6eb81",
                     "path": "",
                     "interactions": "",
                     "processors": "",
@@ -79,6 +77,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7164eaac-9ef7-4de0-a0e3-58365638ef96",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropCoin",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "434ba306-77cb-4947-a1dc-adc9cd98059e",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DropCoin",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

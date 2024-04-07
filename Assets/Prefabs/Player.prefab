@@ -99,6 +99,8 @@ GameObject:
   - component: {fileID: 1653918019809287031}
   - component: {fileID: 1048126523597753438}
   - component: {fileID: 1721180622824042240}
+  - component: {fileID: 7364954861985763227}
+  - component: {fileID: 1058148315043714629}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -322,6 +324,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4590e943-46d3-4fab-aee6-43b2d1ad6f4e
     m_ActionName: Land/Move[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7364954861985763227}
+        m_TargetAssemblyTypeName: CoinDropScript, Assembly-CSharp
+        m_MethodName: DropCoin
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 20a66a7b-67ef-43cf-8ae3-7933bd96fb81
+    m_ActionName: Land/DropCoin[/Keyboard/s]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Land
@@ -340,3 +358,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 6
+--- !u!114 &7364954861985763227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078503768640089160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e1fd62c22769f6408b272304f711280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinCountScript: {fileID: 0}
+  coin: {fileID: 1640990065700959557, guid: 637744c43a46c334aa76d00035f08daa, type: 3}
+--- !u!114 &1058148315043714629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5078503768640089160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 523ec00fc66a0ff4faa3473a9797d15b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

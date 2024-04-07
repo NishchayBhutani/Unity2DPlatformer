@@ -12,8 +12,24 @@ public class CoinCountScript : MonoBehaviour
         numberOfCoins++;
     }
 
+    public void IncreaseCount(int count) {
+        numberOfCoins+=count;
+    }
+
     public void DecreaseCount() {
+        if(numberOfCoins == 0) {
+            Debug.Log("don't have enough coins");
+            return;
+        }
         numberOfCoins--;
+    }
+
+    public void DecreaseCount(int count) {
+        if(numberOfCoins < count) {
+            Debug.Log("don't have enough coins");
+            return;
+        }
+        numberOfCoins-=count;
     }
 
 }
